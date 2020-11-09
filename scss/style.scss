@@ -1,1 +1,618 @@
-@import 'minimize.scss'
+@import 'minimize.scss';
+
+//--------welcome--------//
+.welcome-img{
+	background-image: url(../images/bg-welcome.png);
+	width: 100%;
+	height: 1000px;
+	background-size: cover;
+}
+.nav{
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 60px;
+	padding-right: 50px;
+	a{
+		text-decoration: none;
+		color: $font-color;
+		font-size: 30px;
+		font-weight: 300;
+		padding: 0 20px;
+	}
+	li{
+		list-style-type: none;
+	}
+}
+.welcome-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 500px;
+	height: 700px;
+	margin-left: 890px;
+}
+.info-logo{
+	background-image: url(../images/logo.png);
+	width: 141px;
+	height: 121px;
+}
+.info-title{
+	width: 500px;
+	font-size: 56px;
+	color: $font-color;
+	line-height: 60px;
+}
+span{
+	font-weight: 700;
+	font-size: 78px;
+}
+.info-button{
+	background: $bg-color;
+	opacity: 0.7;
+	width: 400px;
+	height: 100px;
+	color: $font-color;
+	font-size: 49px;
+	font-weight: 300;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+//----------offer----------//
+
+.offer{
+	display: flex;
+	justify-content: space-between;
+	background-color: #212121;
+	color: $font-color;
+}
+.offer-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: space-around;
+	padding-left: 100px;
+	.text-title{
+		font: 24px Gloria Hallelujah;
+		margin-bottom: 50px;
+	}
+	.text-subtitle{
+		font-size: 18px;
+		font-weight: 300;
+		width: 530px;
+		color: #E1E1E1;
+	}
+}
+.offer-image{
+	background-image: url(../images/offer.png);
+	width: 736px;
+	height: 489px;
+}
+
+//----------offer-img----------//
+
+.offer-footer{
+	display: flex;
+	justify-content: space-around;
+	padding: 0 50px;
+	height: 375px;
+	background: $bg-accent;
+	color: #E1E1E1;
+}
+.offer-item1, .offer-item2, .offer-item3{
+	width: 350px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column
+}
+.offer-item1{
+	.item-img{
+		background-image: url(../images/point.png);
+		width: 27px;
+		height: 36px;
+	}
+}
+.offer-item2{
+	.item-img{
+		background-image: url(../images/point.png);
+		width: 54px;
+		height: 36px;
+	}
+}
+.offer-item3{
+	.item-img{
+		background-image: url(../images/point.png);
+		width: 81px;
+		height: 36px;
+	}
+}
+.item-title{
+	font: 22px Gloria Hallelujah;
+	margin: 20px 0;
+}
+.item-subtitle{
+	font-size: 17px;
+	font-weight: 300;
+}
+
+//--------gallery--------//
+.gallery{
+	background: #212121;
+	height: 1200px;
+}
+.gallery-container{
+	background: $bg-color;
+	width: 1080px;
+	margin: 75px 0 0 -550px;
+	left: 50%;
+	position: absolute;
+}
+.gallery-top{
+	@extend %position;
+	height: 210px;
+	flex-direction: column;
+}
+.gallery-title{
+	font: 40px Gloria Hallelujah;
+	color: $font-color;
+}
+.gallery-subtitle{
+	font-size: 40px;
+	font-weight: 300;
+	color: #E1E1E1;
+}
+
+.gallery-bottom{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.gallery-item-photo-1{
+	background-image: url(../images/gallery1.png);
+	width: 270px;
+	height: 274px;
+}
+.gallery-item-photo-2{
+	background-image: url(../images/gallery2.png);
+	width: 270px;
+	height: 274px;
+}
+.gallery-item-photo-3{
+	background-image: url(../images/gallery3.png);
+	width: 270px;
+	height: 274px;
+}
+.gallery-item-photo-4{
+	background-image: url(../images/gallery4.png);
+	width: 270px;
+	height: 274px;
+}
+.gallery-item-photo-5{
+	background-image: url(../images/gallery5.png);
+	width: 270px;
+	height: 274px;
+}
+.gallery-item-photo-6{
+	background-image: url(../images/gallery6.png);
+	width: 270px;
+	height: 274px;
+}
+.gallery-item-text{
+	width: 270px;
+	text-align: center;
+}
+.text-title{
+	font: 22px Gloria Hallelujah;
+	color: $font-color;
+}
+.text-subtitle{
+	width: 200px;
+	color:  #E1E1E1;
+	margin: 10px auto;
+	font-size: 15px;
+	font-weight: 300;
+}
+.text-price{
+	color:  #E1E1E1;
+	font: 18px Gloria Hallelujah;
+	font-weight: 900;
+}
+
+//----------things----------//
+
+.things{
+	background-color: $bg-accent;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+.things-title{
+	font: 28px Gloria Hallelujah;
+	color: $font-color;
+	margin: 0 auto;
+
+}
+.things-subtitle{
+	color: #E1E1E1;
+	width: 700px;
+	text-align: center;
+	margin: 30px auto;
+}
+.things-images{
+	display: flex;
+}
+.things-images div{
+	background-image: url(../images/point.png);
+	width: 27px;
+	height: 36px;
+}
+.things-photo{
+	background-image: url(../images/bg-menu-top.png);
+	width: 100%;
+	height: 250px;
+	position: relative;
+	bottom: -80px;
+}
+
+//----------menu----------//
+
+.menu{
+	height: 600px;
+	background-color: $bg-accent;
+	color: #E1E1E1;
+}
+.menu-top{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.menu-title{
+	font: 50px Gloria Hallelujah;
+	font-weight: 800;
+	color: #E1E1E1;
+	margin: 20px 0 -20px 0;
+}
+.menu-subtitle{
+	font-size: 46px;
+	font-weight: 300;
+	color: #E1E1E1;
+}
+.menu-item-one{
+	display: flex;
+}
+.price{
+	font-family: Gloria Hallelujah;
+	font-size: 16px;
+}
+.item-title{
+	font: 20px Gloria Hallelujah;
+	letter-spacing: -0.05em;
+}
+.item-subtitle{
+	font-size: 16px;
+	width: 350px;
+	margin-top: -15px;
+}
+.item-text{
+	margin-left: 10px;
+}
+.menu-bottom{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.menu-item-one,
+.menu-item-two,
+.menu-item-three{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+.menu-item-one .item-image div{
+	background-image: url(../images/menu-item1.png);
+	width: 62px;
+	height: 38px;
+	position: relative;
+	top: 20px;
+	left: 5px;
+}
+.menu-item-one .item-image{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #CCCCCC;
+}
+.menu-item-two .item-image div{
+	background-image: url(../images/menu-item2.png);
+	width: 47px;
+	height: 48px;
+	position: relative;
+	top: 16px;
+	left: 17px;
+}
+.menu-item-two .item-image{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #CCCCCC;
+}
+.menu-item-three .item-image div{
+	background-image: url(../images/menu-item3.png);
+	width: 57px;
+	height: 42px;
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+.menu-item-three .item-image{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #CCCCCC;
+}
+
+.menu-bottom-two .menu-item-one .item-image div{
+	background-image: url(../images/menu-item4.png);
+	width: 55px;
+	height: 40px;
+	position: relative;
+	top: 20px;
+	left: 14px;
+}
+.menu-bottom-two .menu-item-one .item-image{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #CCCCCC;
+}
+.menu-bottom-two .menu-item-two .item-image div{
+	background-image: url(../images/menu-item5.png);
+	width: 41px;
+	height: 44px;
+	position: relative;
+	top: 18px;
+	left: 22px;
+}
+.menu-bottom-two .menu-item-two .item-image{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #CCCCCC;
+}
+.menu-bottom-two .menu-item-three .item-image div{
+	background-image: url(../images/menu-item6.png);
+	width: 49px;
+	height: 39px;
+	position: relative;
+	top: 20px;
+	left: 16px;
+}
+.menu-bottom-two .menu-item-three .item-image{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #CCCCCC;
+}
+
+//----------image----------//
+
+.image{
+	background-image: url(../images/bg-menu-bottom.png);
+	width: 100%;
+	height: 889px;
+}
+
+//----------here----------//
+
+.here{
+	height: 450px;
+	width: 100%;
+	background: #212121;
+	color: #E1E1E1;
+}
+.here-title{
+	font-family: Gloria Hallelujah;
+	font-size: 48px;
+	letter-spacing: -0.05em;
+	@extend %position;
+	padding-top: 40px;
+}
+.here-bottom{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 600;
+	margin: 20px 0 40px 0;
+}
+.here-item{
+	width: 450px;
+	height: 80px;
+	margin: 0 auto;
+	@extend %position;
+	flex-direction: column;
+}
+.here-item div:last-child input{
+	background: transparent;
+	border: 1px solid #E1E1E1;
+	border-radius: 10px;
+	width: 230px;
+	height: 30px;
+	margin-top: 5px;
+	color: #E1E1E1;
+	font-size: 18px;
+}
+.here-button{
+	@extend %position;
+	width: 230px;
+	height: 30px;
+	border: 1px solid #E1E1E1;
+	border-radius: 10px;
+	margin: 0 auto;
+	cursor: pointer;
+	transition: 0.3s;
+	&:hover{
+		background: #fff;
+		color: #000;
+	}
+}
+
+//----------image2----------//
+
+.image2{
+	background-image: url(../images/bg-menu2.png);
+	width: 100%;
+	height: 864px;
+}
+
+//----------menu2----------//
+
+.menu2{
+	width: 100%;
+	height: 820px;
+	background-color: $bg-color;
+}
+ .menu2-title{
+	font: 50px Gloria Hallelujah;
+	font-weight: 800;
+	color: $font-color;
+	@extend %position;
+	margin-bottom: -20px;
+	padding-top: 20px;
+}
+.menu2-subtitle{
+	font-size: 46px;
+	font-weight: 300;
+	color: #E1E1E1;
+	@extend %position;
+}
+.menu2-bottom{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 1100px;
+	margin: 50px auto;
+}
+.menu2-item{
+	height: 510px;
+	background-color: #E1E1E1;
+}
+.photo-one{
+	background-image: url(../images/menu-photo1.png);
+	width: 339px;
+	height: 301px;
+
+}
+.photo-two{
+	background-image: url(../images/menu-photo2.png);
+	width: 339px;
+	height: 301px;
+
+}
+.photo-three{
+	background-image: url(../images/menu-photo3.png);
+	width: 339px;
+	height: 301px;
+
+}
+.menu2-date, .menu2-titles{
+	font-weight: 800;
+	display: flex;
+	justify-content: center;
+}
+.menu2-date{
+	margin-top: 20px;
+}
+.menu2-titles{
+	margin: 15px auto;
+}
+.menu2-subtitles{
+	width: 300px;
+	margin: 10px auto;
+	text-align: center;
+}
+.menu2-button{
+	font-weight: 800;
+	border-bottom: 5px solid #80EA27;
+	display: flex;
+	justify-content: center;
+	width: 105px;
+	margin: 25px auto;
+	cursor: pointer;
+}
+//----------contact----------//
+
+.contact{
+	height: 340px;
+	color: $font-color;
+	background-color: #212121;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.contact-item{
+	background-image: url(../images/point.png);
+	width: 55px;
+	height: 36px;
+	margin-top: 50px; 
+}
+.contact-subtitle{
+	width: 800px;
+	text-align: center;
+	font-size: 20px;
+}
+.contact-title{
+	font: 30px Gloria Hallelujah;
+	font-weight: 800;
+}
+.contact-social{
+	display: flex;
+	width: 400px;
+	justify-content: space-around;
+	margin-bottom: 40px;
+}
+.contact-social-item1{
+	background-image: url(../images/social1.png);
+	width: 46px;
+	height: 46px;
+	cursor: pointer;
+}
+.contact-social-item2{
+	background-image: url(../images/social2.png);
+	width: 46px;
+	height: 46px;
+	cursor: pointer;
+}
+.contact-social-item3{
+	background-image: url(../images/social3.png);
+	width: 46px;
+	height: 46px;
+	cursor: pointer;
+}
+.contact-social-item4{
+	background-image: url(../images/social4.png);
+	width: 46px;
+	height: 46px;
+	cursor: pointer;
+}
+.contact-social-item5{
+	background-image: url(../images/social5.png);
+	width: 46px;
+	height: 46px;
+	cursor: pointer;
+}
+
+
+
